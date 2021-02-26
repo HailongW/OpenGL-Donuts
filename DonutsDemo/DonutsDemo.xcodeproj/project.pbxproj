@@ -1,0 +1,627 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BCC3863025E8068900229245 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCC3862F25E8068900229245 /* Assets.xcassets */; };
+		BCC3864125E8068A00229245 /* DonutsDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC3864025E8068A00229245 /* DonutsDemoTests.m */; };
+		BCC3864C25E8068A00229245 /* DonutsDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BCC3864B25E8068A00229245 /* DonutsDemoUITests.m */; };
+		BCC3867425E8070D00229245 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCC3867325E8070D00229245 /* OpenGL.framework */; };
+		BCC3867625E8071700229245 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCC3867525E8071700229245 /* GLUT.framework */; };
+		BCC3867825E8075100229245 /* libGLTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCC3867725E8075100229245 /* libGLTools.a */; };
+		BCC3867B25E8079200229245 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BCC3867925E8079200229245 /* main.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BCC3863D25E8068A00229245 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCC3861E25E8068600229245 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCC3862525E8068600229245;
+			remoteInfo = DonutsDemo;
+		};
+		BCC3864825E8068A00229245 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCC3861E25E8068600229245 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCC3862525E8068600229245;
+			remoteInfo = DonutsDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BCC3862625E8068600229245 /* DonutsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DonutsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCC3862F25E8068900229245 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BCC3863425E8068900229245 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCC3863725E8068900229245 /* DonutsDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DonutsDemo.entitlements; sourceTree = "<group>"; };
+		BCC3863C25E8068A00229245 /* DonutsDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DonutsDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCC3864025E8068A00229245 /* DonutsDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DonutsDemoTests.m; sourceTree = "<group>"; };
+		BCC3864225E8068A00229245 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCC3864725E8068A00229245 /* DonutsDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DonutsDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCC3864B25E8068A00229245 /* DonutsDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DonutsDemoUITests.m; sourceTree = "<group>"; };
+		BCC3864D25E8068A00229245 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCC3866325E806C600229245 /* GLBatchBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBatchBase.h; sourceTree = "<group>"; };
+		BCC3866425E806C600229245 /* math3d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = math3d.h; sourceTree = "<group>"; };
+		BCC3866525E806C600229245 /* GLTriangleBatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTriangleBatch.h; sourceTree = "<group>"; };
+		BCC3866625E806C600229245 /* GLBatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLBatch.h; sourceTree = "<group>"; };
+		BCC3866725E806C600229245 /* GLMatrixStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLMatrixStack.h; sourceTree = "<group>"; };
+		BCC3866825E806C600229245 /* GLFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLFrame.h; sourceTree = "<group>"; };
+		BCC3866925E806C600229245 /* GLFrustum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLFrustum.h; sourceTree = "<group>"; };
+		BCC3866A25E806C600229245 /* GLGeometryTransform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLGeometryTransform.h; sourceTree = "<group>"; };
+		BCC3866B25E806C600229245 /* GLShaderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLShaderManager.h; sourceTree = "<group>"; };
+		BCC3866C25E806C600229245 /* StopWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopWatch.h; sourceTree = "<group>"; };
+		BCC3866E25E806C600229245 /* glxew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glxew.h; sourceTree = "<group>"; };
+		BCC3866F25E806C600229245 /* wglew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wglew.h; sourceTree = "<group>"; };
+		BCC3867025E806C600229245 /* glew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glew.h; sourceTree = "<group>"; };
+		BCC3867125E806C600229245 /* GLTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLTools.h; sourceTree = "<group>"; };
+		BCC3867325E8070D00229245 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		BCC3867525E8071700229245 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		BCC3867725E8075100229245 /* libGLTools.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGLTools.a; path = DonutsDemo/libGLTools.a; sourceTree = "<group>"; };
+		BCC3867925E8079200229245 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BCC3862325E8068600229245 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCC3867825E8075100229245 /* libGLTools.a in Frameworks */,
+				BCC3867625E8071700229245 /* GLUT.framework in Frameworks */,
+				BCC3867425E8070D00229245 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCC3863925E8068A00229245 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCC3864425E8068A00229245 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BCC3861D25E8068600229245 = {
+			isa = PBXGroup;
+			children = (
+				BCC3862825E8068600229245 /* DonutsDemo */,
+				BCC3863F25E8068A00229245 /* DonutsDemoTests */,
+				BCC3864A25E8068A00229245 /* DonutsDemoUITests */,
+				BCC3862725E8068600229245 /* Products */,
+				BCC3867225E8070C00229245 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BCC3862725E8068600229245 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCC3862625E8068600229245 /* DonutsDemo.app */,
+				BCC3863C25E8068A00229245 /* DonutsDemoTests.xctest */,
+				BCC3864725E8068A00229245 /* DonutsDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BCC3862825E8068600229245 /* DonutsDemo */ = {
+			isa = PBXGroup;
+			children = (
+				BCC3866225E806C600229245 /* include */,
+				BCC3862F25E8068900229245 /* Assets.xcassets */,
+				BCC3863425E8068900229245 /* Info.plist */,
+				BCC3863725E8068900229245 /* DonutsDemo.entitlements */,
+				BCC3867925E8079200229245 /* main.cpp */,
+			);
+			path = DonutsDemo;
+			sourceTree = "<group>";
+		};
+		BCC3863F25E8068A00229245 /* DonutsDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				BCC3864025E8068A00229245 /* DonutsDemoTests.m */,
+				BCC3864225E8068A00229245 /* Info.plist */,
+			);
+			path = DonutsDemoTests;
+			sourceTree = "<group>";
+		};
+		BCC3864A25E8068A00229245 /* DonutsDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BCC3864B25E8068A00229245 /* DonutsDemoUITests.m */,
+				BCC3864D25E8068A00229245 /* Info.plist */,
+			);
+			path = DonutsDemoUITests;
+			sourceTree = "<group>";
+		};
+		BCC3866225E806C600229245 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				BCC3866325E806C600229245 /* GLBatchBase.h */,
+				BCC3866425E806C600229245 /* math3d.h */,
+				BCC3866525E806C600229245 /* GLTriangleBatch.h */,
+				BCC3866625E806C600229245 /* GLBatch.h */,
+				BCC3866725E806C600229245 /* GLMatrixStack.h */,
+				BCC3866825E806C600229245 /* GLFrame.h */,
+				BCC3866925E806C600229245 /* GLFrustum.h */,
+				BCC3866A25E806C600229245 /* GLGeometryTransform.h */,
+				BCC3866B25E806C600229245 /* GLShaderManager.h */,
+				BCC3866C25E806C600229245 /* StopWatch.h */,
+				BCC3866D25E806C600229245 /* GL */,
+				BCC3867125E806C600229245 /* GLTools.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		BCC3866D25E806C600229245 /* GL */ = {
+			isa = PBXGroup;
+			children = (
+				BCC3866E25E806C600229245 /* glxew.h */,
+				BCC3866F25E806C600229245 /* wglew.h */,
+				BCC3867025E806C600229245 /* glew.h */,
+			);
+			path = GL;
+			sourceTree = "<group>";
+		};
+		BCC3867225E8070C00229245 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BCC3867725E8075100229245 /* libGLTools.a */,
+				BCC3867525E8071700229245 /* GLUT.framework */,
+				BCC3867325E8070D00229245 /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BCC3862525E8068600229245 /* DonutsDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCC3865025E8068A00229245 /* Build configuration list for PBXNativeTarget "DonutsDemo" */;
+			buildPhases = (
+				BCC3862225E8068600229245 /* Sources */,
+				BCC3862325E8068600229245 /* Frameworks */,
+				BCC3862425E8068600229245 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DonutsDemo;
+			productName = DonutsDemo;
+			productReference = BCC3862625E8068600229245 /* DonutsDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BCC3863B25E8068A00229245 /* DonutsDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCC3865325E8068A00229245 /* Build configuration list for PBXNativeTarget "DonutsDemoTests" */;
+			buildPhases = (
+				BCC3863825E8068A00229245 /* Sources */,
+				BCC3863925E8068A00229245 /* Frameworks */,
+				BCC3863A25E8068A00229245 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCC3863E25E8068A00229245 /* PBXTargetDependency */,
+			);
+			name = DonutsDemoTests;
+			productName = DonutsDemoTests;
+			productReference = BCC3863C25E8068A00229245 /* DonutsDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BCC3864625E8068A00229245 /* DonutsDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCC3865625E8068A00229245 /* Build configuration list for PBXNativeTarget "DonutsDemoUITests" */;
+			buildPhases = (
+				BCC3864325E8068A00229245 /* Sources */,
+				BCC3864425E8068A00229245 /* Frameworks */,
+				BCC3864525E8068A00229245 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BCC3864925E8068A00229245 /* PBXTargetDependency */,
+			);
+			name = DonutsDemoUITests;
+			productName = DonutsDemoUITests;
+			productReference = BCC3864725E8068A00229245 /* DonutsDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BCC3861E25E8068600229245 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					BCC3862525E8068600229245 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					BCC3863B25E8068A00229245 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = BCC3862525E8068600229245;
+					};
+					BCC3864625E8068A00229245 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = BCC3862525E8068600229245;
+					};
+				};
+			};
+			buildConfigurationList = BCC3862125E8068600229245 /* Build configuration list for PBXProject "DonutsDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BCC3861D25E8068600229245;
+			productRefGroup = BCC3862725E8068600229245 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BCC3862525E8068600229245 /* DonutsDemo */,
+				BCC3863B25E8068A00229245 /* DonutsDemoTests */,
+				BCC3864625E8068A00229245 /* DonutsDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BCC3862425E8068600229245 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCC3863025E8068900229245 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCC3863A25E8068A00229245 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCC3864525E8068A00229245 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BCC3862225E8068600229245 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCC3867B25E8079200229245 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCC3863825E8068A00229245 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCC3864125E8068A00229245 /* DonutsDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCC3864325E8068A00229245 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCC3864C25E8068A00229245 /* DonutsDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BCC3863E25E8068A00229245 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCC3862525E8068600229245 /* DonutsDemo */;
+			targetProxy = BCC3863D25E8068A00229245 /* PBXContainerItemProxy */;
+		};
+		BCC3864925E8068A00229245 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCC3862525E8068600229245 /* DonutsDemo */;
+			targetProxy = BCC3864825E8068A00229245 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BCC3864E25E8068A00229245 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BCC3864F25E8068A00229245 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BCC3865125E8068A00229245 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DonutsDemo/DonutsDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = A5CQR3946V;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = "/Users/wanghailong/GitHubProject/OpenGL-Donuts/DonutsDemo/DonutsDemo/include";
+				INFOPLIST_FILE = DonutsDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DonutsDemo",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.whl.ios.DonutsDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BCC3865225E8068A00229245 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DonutsDemo/DonutsDemo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = A5CQR3946V;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = "/Users/wanghailong/GitHubProject/OpenGL-Donuts/DonutsDemo/DonutsDemo/include";
+				INFOPLIST_FILE = DonutsDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DonutsDemo",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.whl.ios.DonutsDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BCC3865425E8068A00229245 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = A5CQR3946V;
+				INFOPLIST_FILE = DonutsDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.whl.ios.DonutsDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DonutsDemo.app/Contents/MacOS/DonutsDemo";
+			};
+			name = Debug;
+		};
+		BCC3865525E8068A00229245 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = A5CQR3946V;
+				INFOPLIST_FILE = DonutsDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.whl.ios.DonutsDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DonutsDemo.app/Contents/MacOS/DonutsDemo";
+			};
+			name = Release;
+		};
+		BCC3865725E8068A00229245 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = A5CQR3946V;
+				INFOPLIST_FILE = DonutsDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.whl.ios.DonutsDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DonutsDemo;
+			};
+			name = Debug;
+		};
+		BCC3865825E8068A00229245 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = A5CQR3946V;
+				INFOPLIST_FILE = DonutsDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.whl.ios.DonutsDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DonutsDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BCC3862125E8068600229245 /* Build configuration list for PBXProject "DonutsDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCC3864E25E8068A00229245 /* Debug */,
+				BCC3864F25E8068A00229245 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCC3865025E8068A00229245 /* Build configuration list for PBXNativeTarget "DonutsDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCC3865125E8068A00229245 /* Debug */,
+				BCC3865225E8068A00229245 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCC3865325E8068A00229245 /* Build configuration list for PBXNativeTarget "DonutsDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCC3865425E8068A00229245 /* Debug */,
+				BCC3865525E8068A00229245 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCC3865625E8068A00229245 /* Build configuration list for PBXNativeTarget "DonutsDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BCC3865725E8068A00229245 /* Debug */,
+				BCC3865825E8068A00229245 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BCC3861E25E8068600229245 /* Project object */;
+}
